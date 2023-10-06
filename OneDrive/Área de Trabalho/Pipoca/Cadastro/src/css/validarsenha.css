@@ -1,0 +1,19 @@
+  .senha {
+    height:3.75rem
+  }  
+.senha input { 
+    width: 95.5%;
+  }
+  .senha div {
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: .625rem;
+    letter-spacing: 0em;
+    text-align: left;
+  
+  }
+  
+  .feedback {
+    font-size: .4rem;
+  }

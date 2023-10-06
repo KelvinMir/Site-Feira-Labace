@@ -1,0 +1,72 @@
+
+.footer {
+    background-color: #00ff00;
+    color:#ffffff;
+    font-weight:300;
+    font-size:1.15rem;
+    padding-top:2rem;
+    padding:1rem; 
+    gap: 10rem
+}
+.Redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+       
+}
+.Redes p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Redes .flex {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.flex a {
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+}
+.flex img {
+    border-radius:50%;
+    height:32px;
+}
+
+.Atendimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+    
+}
+.Atendimento .contact {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.contact a { 
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff
+}
+.Pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.Pay .cards {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    
+}
+
+

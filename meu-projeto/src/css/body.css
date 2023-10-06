@@ -1,0 +1,38 @@
+,.product img {
+    width: 3rem; 
+}
+.carrosel {
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    heigth: 5rem;
+    margin-top:2rem;
+}
+.carrosel div {
+    display: flex;
+    justify-content: center;
+    background-color: #0ADC0A;
+    height:3rem;
+    align-items: center;
+    width: 10rem;
+}
+.flexselect {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide o espaço em três colunas iguais */
+    grid-gap: 10px; /* Espaçamento entre os elementos */
+    text-align: center;
+    
+    align-items: center;
+    box-sizing: border-box;
+    margin: 5rem;
+
+}
+.flexselect h2 {
+    display: flex;
+    justify-content: center;
+}
+.flexselect li {
+        
+    text-align: center;
+}

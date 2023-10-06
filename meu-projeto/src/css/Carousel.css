@@ -1,0 +1,24 @@
+.carousel-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.slide-item {
+    width: 80px;
+    heigth: 50px;
+    object-fit:cover;
+    
+    
+}
+.carousel-container p {
+    margin-top: 0;
+    margin-bottom:2rem;
+}
+
