@@ -30,7 +30,7 @@ function SenhaValidation() {
           id="senha"
           name="senha"
           value={senha}
-          placeholder="Senha"
+          placeholder="&nbsp;Senha"
           onChange={(e) => {
             setSenha(e.target.value);
             validarSenha(e.target.value);

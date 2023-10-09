@@ -4,6 +4,7 @@ import './assets/fonts/Lobster-Regular.ttf'
 import MenuHamburguer from './assets/js/hamburguer'
 import SenhaValidation from './assets/js/validarsenha';
 import Footer from './assets/js/footer';
+import axios from 'axios';
 
 
 function Cadastro() {
@@ -17,6 +18,12 @@ function Cadastro() {
     ano: '',
     senha: '',
   });
+  const [idCounter, setIdCounter] = useState(1);
+
+  const handleEnviarData = () => {
+    const dataNascimento = `${formData.ano}-${formData.mes}-${formData.dia}`;
+    return dataNascimento;
+  }
 
   // Manipulador de evento para atualizar o estado quando os campos do formulário forem alterados
   const handleChange = (event) => {
@@ -28,12 +35,30 @@ function Cadastro() {
   };
 
   // Manipulador de evento para lidar com o envio do formulário
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Faça algo com os dados do formulário, como enviar para um servidor ou realizar alguma ação no cliente
-    console.log(formData);
-  };
+    const dataNascimento = handleEnviarData();
 
+    try {
+      const dadosParaAPI = {
+        id: idCounter,
+        firstName: formData.nome,
+        lastName:formData.sobrenome,
+        email: formData.email,
+        password: formData.senha,
+        birthday:dataNascimento,
+        role: 'User',
+      };
+      setIdCounter(idCounter + 1);
+      const response = await axios.post('https://api-pipoca-agil-f605f7e4c842.herokuapp.com/api/users', dadosParaAPI);
+      
+      // Verificar a resposta da API e lidar com ela
+      console.log('Resposta da API:', response.data);
+    } catch (error) {
+      console.error('Erro ao chamar a API:', error);
+      // Lide com erros, como exibir uma mensagem de erro ao usuário
+    }
+  };
   return (
     <body className='container'>
       <MenuHamburguer />
@@ -49,7 +74,7 @@ function Cadastro() {
                   name="nome"
                   value={formData.nome}
                   onChange={handleChange}
-                  placeholder="Nome"
+                  placeholder="&nbsp;Nome"
                 />
               </div>
               <div>
@@ -60,7 +85,7 @@ function Cadastro() {
                   name="sobrenome"
                   value={formData.sobrenome}
                   onChange={handleChange}
-                  placeholder="Sobrenome"
+                  placeholder="&nbsp;Sobrenome"
                 />
               </div>    
             </div >
@@ -72,7 +97,7 @@ function Cadastro() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Email"
+                placeholder="&nbsp;Email"
               />
             </div>
             <div className='data'>
@@ -84,7 +109,8 @@ function Cadastro() {
                     name="dia"
                     value={formData.dia}
                     onChange={handleChange}
-                    placeholder="Dia"
+                    placeholder="&nbsp;Dia"
+                    pattern="\d{2}"
                     className='data-item'
                   />
               </div>
@@ -96,7 +122,8 @@ function Cadastro() {
                     name="mes"
                     value={formData.mes}
                     onChange={handleChange}
-                    placeholder="Mês"
+                    placeholder="&nbsp;Mês"
+                    pattern="\d{2}"
                     className='data-item'
                   />
               </div>  
@@ -108,7 +135,8 @@ function Cadastro() {
                     name="ano"
                     value={formData.ano}
                     onChange={handleChange}
-                    placeholder="Ano"
+                    placeholder="&nbsp;Ano"
+                    pattern="\d{4}"
                     className='data-item'
                   />
               </div>

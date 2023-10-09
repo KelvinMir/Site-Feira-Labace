@@ -3,6 +3,7 @@
   }  
 .senha input { 
     width: 95.5%;
+    height:3.25rem
   }
   .senha div {
     font-family: 'Montserrat', 'sans-serif';
@@ -14,6 +15,6 @@
   
   }
   
-  .feedback {
+  .feedback-senha {
     font-size: .4rem;
   }
