@@ -18,7 +18,6 @@ function Cadastro() {
     ano: '',
     senha: '',
   });
-  const [idCounter, setIdCounter] = useState(1);
 
   const handleEnviarData = () => {
     const dataNascimento = `${formData.ano}-${formData.mes}-${formData.dia}`;
@@ -41,7 +40,6 @@ function Cadastro() {
 
     try {
       const dadosParaAPI = {
-        id: idCounter,
         firstName: formData.nome,
         lastName:formData.sobrenome,
         email: formData.email,
