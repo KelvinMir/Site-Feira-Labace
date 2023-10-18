@@ -1,0 +1,197 @@
+/* Reset de estilos */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+  }
+  .capa {
+    width: 1.2rem;
+    border-radius: 50%;
+  }
+  
+  /* Estilos do menu */
+  .wrapper {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  .menu {
+    background-color: #f1f1f1;
+    padding: 0px;
+    text-align: center;
+    
+  }
+  /* Estilos do header */
+  .header {
+    background-color: #056c6c;
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7rem;
+  }
+  
+  .header img {
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 3rem;
+  }
+
+  .header .custom-button {
+    background-color: #056c6c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 10px;
+    display:flex;
+    justify-content:center
+  }
+  #language-dropdown {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #B8B6B6D3;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-size:1rem;
+    color: #FFFFFF;
+  }
+  
+  /* Estilos do conteúdo */
+  .top {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 12.5rem;
+    margin-left: 0%;
+    
+  }
+  .text-top {
+    text-align: center;
+    font-size:  35px;
+  }
+  
+
+  .content{
+    background-color:#056c6c;
+    font-size: 15px;
+    margin-left: 0px;
+    display: flex; 
+    align-items:center;
+  
+  }
+   
+  .content img {
+    align-self: flex-start;
+    margin-right:10px;
+    width: 300px;
+    float: left;
+    
+    
+  }
+  .content iframe {
+    margin-left: 120px;
+  }
+  .content div {
+    width: 4rem;
+  }
+  .historia p {
+    font-size:1.25rem;
+    font-weight:200;
+    
+  }
+  .historia div {
+    padding:1rem 4rem 0.5rem;
+  }
+  .historia img {
+    width: 30rem;
+  }
+  .Apresentação {
+    padding:3.5rem;
+    font-size:1.25rem;
+  }
+  .empresas {
+    text-align: center;
+    margin-bottom:9rem;
+  }
+  .divExpo {
+    margin:3rem;
+  }
+  .divExpo p {
+  font-size:1.75rem;
+  font-weight:200;
+  }
+
+  .Expo {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+    margin-top:16px;
+  }
+  .Expo img {
+    width: 8rem;
+  }
+  .divApoio {
+    margin:3rem;
+  }
+  .divApoio p {
+    font-size:1.75rem;
+    font-weight:200;
+    }
+  .Apoio {
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+  }
+  .Apoio img {
+    width: 8rem;
+  }
+  
+  /* Estilos do rodapé */
+  .footer {
+    background-color: #056c6c;
+    color: #fff;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+    
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .text-footer {
+    font-size:1.2rem;
+  }
+  .footer-img {
+    border-radius: 50%;
+    width: 20px;
+    opacity: 100%;
+    display: inline-block;
+    background-color: #056c6c;
+  }
+  .footer div {
+    display:flex; 
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+  }
+  
+
+  
